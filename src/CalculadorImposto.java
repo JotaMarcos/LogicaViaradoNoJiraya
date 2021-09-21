@@ -1,20 +1,13 @@
 import java.util.Scanner;
 
-public class CalculaPorcentagemSalario {
+public class CalculadorImposto {
     public static void main(String[] args) {
-        double salario;
-        double porcentagem;
+        double salario = 2500.00;
+        double porcentagem = 30;
+        double porcentagemDoSalario = (salario * (porcentagem / 100));
 
-        Scanner scan = new Scanner(System.in);
 
-        System.out.println("Digite o valor do Salário R$: ");
-        salario = scan.nextDouble();
-        System.out.println("Digite o valor do Percentual %: " + scan);
-        porcentagem = scan.nextDouble();
-
-        
-
-        System.out.println("A porcentagem determinada do Salário é R$: " + porcentagem);
+        System.out.println("A porcentagem determinada do Salário é R$: " + porcentagemDoSalario);
 
 
 
